@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frugalist</title>
+    <style>
+        /* Reset default margin and padding */
+        body, h1, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Add a specific width to the input boxes in both item-list and completed-list */
+        .item-list li input[type="text"],
+        .completed-list li input[type="text"] {
+            width: 400px; /* Adjust the width as needed */
+        }
+
+        /* Style for the completed items, using a different color */
+        .completed-item {
+            color: #888888; /* Adjust the style as needed */
+        }
+
+        /* Remove default list styles and set a margin for both lists */
+        .item-list,
+        .completed-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Set the same margin for list items in both lists */
+        .item-list li,
+        .completed-list li {
+            margin-bottom: 10px; /* Adjust the margin as needed */
+            display: flex; /* Use flexbox for alignment */
+            align-items: center; /* Center items vertically */
+        }
+
+        /* Adjust spacing between checkbox and label text */
+        .item-list li label {
+            display: flex; /* Use flexbox for alignment */
+            align-items: center; /* Center items vertically */
+        }
+
+        /* Add margin to checkbox */
+        .item-list li input[type="checkbox"] {
+            margin-right: 10px; /* Adjust the margin as needed */
+        }
+
+        /* Add a line break between "Price:" and the dollar amount */
+        .item-list li .price {
+            white-space: pre; /* Preserve whitespace for line breaks */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Frugalist</h1>
+        <ul class="item-list">
+        </ul>
+        <ul class="completed-list">
+        </ul>
+    </div>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</body>
+</html>
